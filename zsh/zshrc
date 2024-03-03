@@ -74,7 +74,7 @@ setopt COMPLETE_ALIASES
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
 HIST_STAMPS="yyyy-mm-dd"
-HISTCONTROL="erasedups"
+HISTCONTROL="erasedups" # Delete duplicate commands in the history.
 setopt HIST_IGNORE_ALL_DUPS
 
 
@@ -121,9 +121,6 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-#  Delete duplicate commands in the history.
-export HISTCONTROL=erasedups
 
 # Set up asdf
 . /opt/homebrew/opt/asdf/libexec/asdf.sh

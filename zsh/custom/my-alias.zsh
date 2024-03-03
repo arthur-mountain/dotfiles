@@ -10,7 +10,7 @@ alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 
 # Configs
-alias confs_dotfile="$EDITOR ~/.dotfiles"
+alias confs_dotfile="${EDITOR:-nvim} ~/.dotfiles"
 
 # Print prettily PATH
 alias path='echo $PATH | tr -s ":" "\n"'
@@ -29,8 +29,8 @@ fi
 # Tmux
 if [[ -n "$(command -v tmux)" ]]; then
   alias tm='tmux'
-  alias ta='tmux attach'
-  alias tat='tmux attach -t'
-  alias tns='tmux new-session -s'
+  alias tma='tmux attach'
+  alias tmat='tmux attach -t'
+  alias tmns='tmux new-session -dAs'
 fi
 
