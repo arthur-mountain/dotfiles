@@ -1,0 +1,39 @@
+------------------------------------
+Normal Mode: 
+------------------------------------
+1. sourround: gs
+
+2. hover open diagnostic: <S-k>
+
+3. Go to references: gr
+
+4. Go to definition: gd
+
+5. Go to declartion: gD
+
+6. Close buffer: <Leader>bd
+
+7. Switch window: <C-{h,j,k,l}>
+
+8. Switch buffer: <S-{h,l}>
+
+9. 
+  Center at current cursor: zz or z.
+  Top at current cursor: zt
+
+--------- Neo tree --------- 
+1. Change explore root dir: .
+
+2. Toogle hidden files: <S-h>
+
+------------------------------------
+Insert Mode: 
+------------------------------------
+1. scroll diagnostic: <C-f> | <C-b>
+
+2. next dianostic: <Tab>
+
+3. prev dianostic: <S-Tab>
+
+4. show list of dianostice: <C-n>
+

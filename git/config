@@ -1,0 +1,11 @@
+[init]
+    defaultBranch = main
+
+[core]
+    editor = nvim
+
+[diff]
+    algorithm = patience
+
+[pull]
+    rebase = true
