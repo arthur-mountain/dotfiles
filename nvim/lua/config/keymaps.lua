@@ -12,7 +12,7 @@ end
 keymap.set("n", "<leader>r", ":so %<CR>", mergeTables(opts, { desc = "Reload configuration" }))
 
 -- ESC to ;;
-keymap.set({ "n", "i", "v", "t" }, ";;", "<ESC><ESC>", mergeTables(opts, { desc = "ESC" }))
+keymap.set({ "n", "i", "v", "t" }, ";;", "<ESC>", mergeTables(opts, { desc = "ESC" }))
 
 -- Save
 keymap.set({ "i", "x", "n", "s" }, ";w", ":w<CR><ESC>", mergeTables(opts, { desc = "Save file" }))
