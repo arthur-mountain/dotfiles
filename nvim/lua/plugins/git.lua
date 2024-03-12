@@ -3,11 +3,13 @@ return {
   {
     "kdheepak/lazygit.nvim",
     dependencies = {
-      "nvim-telescope/telescope.nvim",
       "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim",
     },
     config = function()
-      require("telescope").load_extension("lazygit")
+      require("lazyvim.util").on_load("telescope.nvim", function()
+        require("telescope").load_extension("lazygit")
+      end)
     end,
   },
 

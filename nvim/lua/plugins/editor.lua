@@ -1,7 +1,7 @@
 return {
   {
-    enabled = false,
     "folke/flash.nvim",
+    enabled = false,
     ---@type Flash.Config
     opts = {
       search = {

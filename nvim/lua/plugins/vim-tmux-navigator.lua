@@ -9,11 +9,11 @@ return {
       "TmuxNavigatePrevious",
     },
     keys = {
-      { "<c-h>", ":<C-U>TmuxNavigateLeft<CR>" },
-      { "<c-j>", ":<C-U>TmuxNavigateDown<CR>" },
-      { "<c-k>", ":<C-U>TmuxNavigateUp<CR>" },
-      { "<c-l>", ":<C-U>TmuxNavigateRight<CR>" },
-      { "<c-\\>", ":<C-U>TmuxNavigatePrevious<CR>" },
+      { "<C-h>", ":<C-U>TmuxNavigateLeft<CR>" },
+      { "<C-j>", ":<C-U>TmuxNavigateDown<CR>" },
+      { "<C-k>", ":<C-U>TmuxNavigateUp<CR>" },
+      { "<C-l>", ":<C-U>TmuxNavigateRight<CR>" },
+      { "<C-\\>", ":<C-U>TmuxNavigatePrevious<CR>" },
     },
   },
 }

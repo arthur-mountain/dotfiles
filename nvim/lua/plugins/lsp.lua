@@ -7,6 +7,8 @@ return {
         "luacheck",
         "shellcheck",
         "css-lsp",
+        "mdx-analyzer",
+        "rust-analyzer",
       })
     end,
   },
