@@ -24,6 +24,10 @@ keymap.set("n", ";q", ":q<CR>", mergeTables(opts, { desc = "Save file" }))
 keymap.set("n", "+", "<C-a>", { desc = "Increment" })
 keymap.set("n", "-", "<C-x>", { desc = "Decrement" })
 
+-- Press 'H', 'L' to jump to start/end of a line (first/last char)
+keymap.set({ "n", "v" }, "L", "$", mergeTables(opts, { desc = "Jump to end of line" }))
+keymap.set({ "n", "v" }, "H", "^", mergeTables(opts, { desc = "Jump to start of line" }))
+
 -- Prevent delete a char that overwrite what's in the clipboard
 keymap.set({ "n", "v" }, "x", '"_x', mergeTables(opts, { desc = "Delete char(s) without write into clipboard" }))
 
@@ -63,13 +67,13 @@ keymap.set("n", "<C-w><up>", ":horizontal resize +10<CR>", mergeTables(opts, { d
 keymap.set("n", "<C-w><down>", ":horizontal resize -10<CR>", mergeTables(opts, { desc = "Decrease window verticaly" }))
 
 -- Terminal
-keymap.set("t", ";;", "<C-\\><C-n>", { desc = "Enter Normal Mode" })
-keymap.set("t", "<C-h>", ":wincmd h<CR>", { desc = "Go to left window" })
-keymap.set("t", "<C-j>", ":wincmd j<CR>", { desc = "Go to lower window" })
-keymap.set("t", "<C-k>", ":wincmd k<CR>", { desc = "Go to upper window" })
-keymap.set("t", "<C-l>", ":wincmd l<CR>", { desc = "Go to right window" })
-keymap.set("n", "st-", ":split +term<CR>:startinsert<CR>", { desc = "Open Terminal horizontaly" })
-keymap.set("n", "st\\", ":vsplit +term<CR>:startinsert<CR>", { desc = "Open Terminal verticaly" })
+keymap.set("t", ";;", "<C-\\><C-n>", mergeTables(opts, { desc = "Enter Normal Mode" }))
+keymap.set("t", "<C-h>", ":wincmd h<CR>", mergeTables(opts, { desc = "Go to left window" }))
+keymap.set("t", "<C-j>", ":wincmd j<CR>", mergeTables(opts, { desc = "Go to lower window" }))
+keymap.set("t", "<C-k>", ":wincmd k<CR>", mergeTables(opts, { desc = "Go to upper window" }))
+keymap.set("t", "<C-l>", ":wincmd l<CR>", mergeTables(opts, { desc = "Go to right window" }))
+keymap.set("n", "st-", ":split +term<CR>:startinsert<CR>", mergeTables(opts, { desc = "Open Terminal horizontaly" }))
+keymap.set("n", "st\\", ":vsplit +term<CR>:startinsert<CR>", mergeTables(opts, { desc = "Open Terminal verticaly" }))
 
 -- Delete all buffers
 keymap.set("n", "<Leader>ba", ":%bd<CR>")

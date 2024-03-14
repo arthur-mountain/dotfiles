@@ -7,7 +7,7 @@ return {
       lualine_bold = true,
       styles = { sidebars = "transparent", floats = "transparent" },
       on_colors = function(colors)
-        colors.comment = "#88C0D0"
+        colors.comment = "#C0C0C0"
       end,
       on_highlights = function(hl, colors)
         -- Relative number

@@ -16,9 +16,7 @@ return {
   },
   {
     "rcarriga/nvim-notify",
-    opts = {
-      timeout = 5000,
-    },
+    opts = { timeout = 5000 },
   },
 
   --------- animations ---------
@@ -26,9 +24,7 @@ return {
     "echasnovski/mini.animate",
     event = "VeryLazy",
     opts = function(_, opts)
-      opts.scroll = {
-        enable = false,
-      }
+      opts.scroll = { enable = false }
     end,
   },
 
