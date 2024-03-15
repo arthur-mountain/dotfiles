@@ -12,7 +12,6 @@ return {
         "go",
         "rust",
         "haskell",
-        "markdown",
       })
     end,
     config = function(_, opts)
