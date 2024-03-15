@@ -18,15 +18,15 @@ keymap.set({ "n", "i", "v", "t" }, ";;", "<ESC>", mergeTables(opts, { desc = "ES
 keymap.set({ "i", "x", "n", "s" }, ";w", ":w<CR><ESC>", mergeTables(opts, { desc = "Save file" }))
 
 -- Quit
-keymap.set("n", ";q", ":q<CR>", mergeTables(opts, { desc = "Save file" }))
+keymap.set("n", ";q", ":q<CR>", mergeTables(opts, { desc = "Quit file" }))
 
 -- Increment/Decrement
 keymap.set("n", "+", "<C-a>", { desc = "Increment" })
 keymap.set("n", "-", "<C-x>", { desc = "Decrement" })
 
 -- Press 'H', 'L' to jump to start/end of a line (first/last char)
-keymap.set({ "n", "v" }, "L", "$", mergeTables(opts, { desc = "Jump to end of line" }))
-keymap.set({ "n", "v" }, "H", "^", mergeTables(opts, { desc = "Jump to start of line" }))
+keymap.set({ "n", "v" }, "gL", "$", mergeTables(opts, { desc = "Jump to end of line" }))
+keymap.set({ "n", "v" }, "gH", "^", mergeTables(opts, { desc = "Jump to start of line" }))
 
 -- Prevent delete a char that overwrite what's in the clipboard
 keymap.set({ "n", "v" }, "x", '"_x', mergeTables(opts, { desc = "Delete char(s) without write into clipboard" }))
