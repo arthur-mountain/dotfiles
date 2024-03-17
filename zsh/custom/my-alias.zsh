@@ -15,6 +15,19 @@ alias confs_dotfile="${EDITOR:-nvim} ~/.dotfiles"
 # Print prettily PATH
 alias path='echo $PATH | tr -s ":" "\n"'
 
+# Easier navigation: .., ..., ...., .....
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# Shortcuts
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+
+# Get week number
+alias week='date +%V'
+
 # Editor
 if [[ -n "$(command -v nvim)" ]]; then
     alias v='nvim'

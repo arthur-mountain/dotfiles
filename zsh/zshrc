@@ -78,9 +78,7 @@ setopt COMPLETE_ALIASES
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
 HIST_STAMPS="yyyy-mm-dd"
-HISTCONTROL="erasedups" # Delete duplicate commands in the history.
-setopt HIST_IGNORE_ALL_DUPS
-setopt HIST_IGNORE_SPACE
+HISTCONTROL="ignoreboth" # Omit duplicates and commands that begin with a space from history.
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
