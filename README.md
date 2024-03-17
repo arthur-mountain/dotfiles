@@ -12,36 +12,36 @@ Schedule, custom shell script automatically setup.
 
   `brew install`
 
-  - asdf
-  - neovim
-  - git
-  - lazygit
-  - httpie
-  - xcodes
-  - fd
-  - ripgrep
-  - kubernetes-cli
-  - watchman
-  - tmux
+  [x] asdf
+  [x] neovim
+  [x] git
+  [x] lazygit
+  [x] httpie
+  [x] xcodes
+  [x] fd
+  [x] ripgrep
+  [x] kubernetes-cli
+  [x] watchman
+  [x] tmux
 
   ### casks
 
   `brew install --cask`
 
-  - iterm2
-  - docker
-  - google-chrome
-  - firefox
-  - microsoft-edge
-  - brave-browser
-  - notion
-  - discord
-  - xcodes
-  - zulu -- (openJDK)
-  - android-studio
-  - pgadmin4 -- (GUI of postgresql)
-  - font-hack-nerd-font
-  - google-cloud-sdk
+  [x] iterm2
+  [x] docker
+  [x] google-chrome
+  [x] firefox
+  [x] microsoft-edge
+  [x] brave-browser
+  [x] notion
+  [x] discord
+  [x] xcodes
+  [x] zulu -- (openJDK)
+  [x] android-studio
+  [x] pgadmin4 -- (GUI of postgresql)
+  [x] font-hack-nerd-font
+  [x] google-cloud-sdk
 
 - ## 3. Setup iterm2 config
 
