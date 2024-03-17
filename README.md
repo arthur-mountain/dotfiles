@@ -1,64 +1,70 @@
 # !!! Still updating
 
-# My setup template for MacOS
-
 Schedule, custom shell script automatically setup.
 
-- ## 1. Install homebrew
+##### 1. Homebrew
 
-  Note: https://brew.sh
+- [] Install [homebrew](https://brew.sh)
 
-- ## 2. Install packages of homebrew
+- [x] Install packages of homebrew
 
-  `brew install`
+  `Brews`:
 
-  [x] asdf
-  [x] neovim
-  [x] git
-  [x] lazygit
-  [x] httpie
-  [x] xcodes
-  [x] fd
-  [x] ripgrep
-  [x] kubernetes-cli
-  [x] watchman
-  [x] tmux
+  - [x] asdf
+  - [x] neovim
+  - [x] git
+  - [x] lazygit
+  - [x] httpie
+  - [x] xcodes
+  - [x] fd
+  - [x] ripgrep
+  - [x] kubernetes-cli
+  - [x] watchman
+  - [x] tmux
 
-  ### casks
+  `Casks`:
 
-  `brew install --cask`
+  - [x] iterm2
+  - [x] docker
+  - [x] google-chrome
+  - [x] firefox
+  - [x] microsoft-edge
+  - [x] brave-browser
+  - [x] notion
+  - [x] discord
+  - [x] xcodes
+  - [x] zulu -- (openJDK)
+  - [x] android-studio
+  - [x] pgadmin4 -- (GUI of postgresql)
+  - [x] font-hack-nerd-font
+  - [x] google-cloud-sdk
 
-  [x] iterm2
-  [x] docker
-  [x] google-chrome
-  [x] firefox
-  [x] microsoft-edge
-  [x] brave-browser
-  [x] notion
-  [x] discord
-  [x] xcodes
-  [x] zulu -- (openJDK)
-  [x] android-studio
-  [x] pgadmin4 -- (GUI of postgresql)
-  [x] font-hack-nerd-font
-  [x] google-cloud-sdk
+##### 2. Terminal with iterm2
 
-- ## 3. Setup iterm2 config
+- [] Setup iterm2 config
 
-  Import iterm2 json config.
+  a. Import iterm2 json config.
 
-  Add additional keybinds for compatible with tmux.
+  b. Add additional keybinds for compatible with tmux.
 
   1. command + l -> clear\n
 
-- ## 4. Setup neovim config
+##### 3. Neovim
 
-- ## 5. Install/Setup oh-my-zsh
+- [] Setup neovim config
 
-  Install oh-my-zsh. -- https://github.com/ohmyzsh/ohmyzsh
+##### 4. Zsh
 
-  ## 6. Setup global git config
+- [] Install/Setup [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
 
-  ## 7. Setup tmux config
+##### 5. Git
 
-  setup tpm. -- https://github.com/tmux-plugins/tpm
+- [] Setup global git config
+
+##### 6. Tmux
+
+- [] Setup tmux config with [tpm](https://github.com/tmux-plugins/tpm).
+
+# Refs
+
+[nicknisi dotfiles](https://github.com/nicknisi/dotfiles)
