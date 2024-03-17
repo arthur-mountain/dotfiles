@@ -10,7 +10,7 @@ alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 
 # Configs
-alias confs_dotfile="${EDITOR:-nvim} ~/.dotfiles"
+alias dotfile="cd ~/.dotfiles"
 
 # Print prettily PATH
 alias path='echo $PATH | tr -s ":" "\n"'
