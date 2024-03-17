@@ -72,11 +72,6 @@ vim.opt.splitright = true -- Put new windows right of current
 vim.opt.splitkeep = "cursor"
 
 ------------------------------------
--- Setup terminal shell
-------------------------------------
-vim.opt.shell = "zsh"
-
-------------------------------------
 -- Fold
 ------------------------------------
 vim.opt.foldmethod = "expr"
