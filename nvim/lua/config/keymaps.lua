@@ -54,12 +54,6 @@ keymap.set("n", "<Leader><Tab>q", ":tabclose<CR>", mergeTables(opts, { desc = "Q
 keymap.del("n", "<Leader>wd")
 keymap.set("n", "<Leader>wq", "<C-W>c", mergeTables(opts, { desc = "Delete window" }))
 
--- Split window
-keymap.del("n", "<Leader>w-")
-keymap.del("n", "<Leader>w|")
-keymap.set("n", "s\\", ":vsplit<CR>", mergeTables(opts, { desc = "Split window verticaly" }))
-keymap.set("n", "s-", ":split<CR>", mergeTables(opts, { desc = "Split window horizontaly" }))
-
 -- Resize window
 keymap.set("n", "<C-w><left>", ":vertical resize -10<CR>", mergeTables(opts, { desc = "Decrease window verticaly" }))
 keymap.set("n", "<C-w><right>", ":vertical resize +10<CR>", mergeTables(opts, { desc = "Increase window verticaly" }))
@@ -82,8 +76,3 @@ keymap.set("n", "<Leader>ba", ":%bd<CR>")
 keymap.set("n", "<Leader>md", ":delmarks ", mergeTables(opts, { desc = "Delete a mark" }))
 keymap.set("n", "<Leader>m!", ":delmarks!<CR>", mergeTables(opts, { desc = "Delete marks" }))
 keymap.set("n", "<Leader>m?", ":marks<CR>", mergeTables(opts, { desc = "List of mark" }))
-
--- Diagnostics
--- keymap.set("n", "<C-j>", function()
---   vim.diagnostic.goto_next()
--- end, opts)
