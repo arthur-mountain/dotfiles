@@ -23,6 +23,7 @@ return {
     opts = function(_, opts)
       local cmp = require("cmp")
 
+      -- default: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/plugins/coding.lua#L21
       opts.mapping = vim.tbl_extend("force", opts.mapping, {
         ["<C-k>"] = cmp.mapping.select_prev_item(), -- previous suggestion
         ["<C-j>"] = cmp.mapping.select_next_item(), -- next suggestion
