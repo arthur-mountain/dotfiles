@@ -78,3 +78,18 @@ keymap.set("n", "<Leader>ba", ":%bd<CR>", getOptions({ desc = "Delete all buffer
 keymap.set("n", "<Leader>md", ":delmarks ", getOptions({ desc = "Delete a mark" }))
 keymap.set("n", "<Leader>m!", ":delmarks!<CR>", getOptions({ desc = "Delete all marks" }))
 keymap.set("n", "<Leader>m?", ":marks<CR>", getOptions({ desc = "List of mark" }))
+
+-- Center buffer while navigating
+keymap.set("n", "<C-u>", "<C-u>zz")
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "n", "Nzz")
+keymap.set("n", "N", "nzz")
+keymap.set("n", "%", "%zz")
+keymap.set("n", "*", "*zz")
+
+-- Press 'S' for quick find/replace for the word under the cursor
+keymap.set("n", "S", function()
+  local cmd = ":%s/<C-r><C-w>/<C-r><C-w>/gI<Left><Left><Left>"
+  local keys = vim.api.nvim_replace_termcodes(cmd, true, false, true)
+  vim.api.nvim_feedkeys(keys, "n", false)
+end)
