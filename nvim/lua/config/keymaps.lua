@@ -30,6 +30,9 @@ keymap.set({ "n", "v" }, "gH", "^", getOptions({ desc = "Jump to start of line" 
 -- Prevent delete a char that overwrite what's in the clipboard
 keymap.set({ "n", "v" }, "x", '"_x', getOptions({ desc = "Delete char(s) without write into clipboard" }))
 
+-- Paste without losing the contents of the register
+keymap.set("x", "<Leader>p", '"_dP', getOptions({ desc = "Paste without closing the content of the register" }))
+
 -- Select all
 keymap.set("n", "<C-a>", "gg<S-v>G", getOptions({ desc = "Select All" }))
 
