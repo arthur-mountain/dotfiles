@@ -41,8 +41,8 @@ keymap.set("n", "<Leader><Tab>e", ":tabedit", getOptions({ desc = "Edit new file
 
 keymap.del("n", "<Leader><Tab>f")
 keymap.del("n", "<Leader><Tab>l")
-keymap.set("n", "<Leader><Tab>0", ":tabfirst<CR>", getOptions({ desc = "Go to first tab" }))
-keymap.set("n", "<Leader><Tab>$", ":tablast<CR>", getOptions({ desc = "Go to last tab" }))
+keymap.set("n", "<Leader><Tab>L", ":tabfirst<CR>", getOptions({ desc = "Go to first tab" }))
+keymap.set("n", "<Leader><Tab>H", ":tablast<CR>", getOptions({ desc = "Go to last tab" }))
 
 keymap.del("n", "<Leader><Tab>[")
 keymap.del("n", "<Leader><Tab>]")
@@ -51,10 +51,6 @@ keymap.set("n", "<Leader><Tab>l", ":tabnext<CR>", getOptions({ desc = "Go to nex
 
 keymap.del("n", "<Leader><Tab>d")
 keymap.set("n", "<Leader><Tab>q", ":tabclose<CR>", getOptions({ desc = "Quit tab" }))
-
--- Delete window
-keymap.del("n", "<Leader>wd")
-keymap.set("n", "<Leader>wq", "<C-W>c", getOptions({ desc = "Delete window" }))
 
 -- Resize window
 keymap.set("n", "<C-w><left>", ":vertical resize -10<CR>", getOptions({ desc = "Decrease window verticaly" }))
