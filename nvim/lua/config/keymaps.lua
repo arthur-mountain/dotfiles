@@ -49,8 +49,8 @@ keymap.del("n", "<Leader><Tab>]")
 keymap.set("n", "<Leader><Tab>h", ":tabprev<CR>", getOptions({ desc = "Go to prev tab" }))
 keymap.set("n", "<Leader><Tab>l", ":tabnext<CR>", getOptions({ desc = "Go to next tab" }))
 
-keymap.del("n", "<Leader><Tab>d")
-keymap.set("n", "<Leader><Tab>q", ":tabclose<CR>", getOptions({ desc = "Quit tab" }))
+-- keymap.del("n", "<Leader><Tab>d")
+-- keymap.set("n", "<Leader><Tab>q", ":tabclose<CR>", getOptions({ desc = "Quit tab" }))
 
 -- Resize window
 keymap.set("n", "<C-w><left>", ":vertical resize -10<CR>", getOptions({ desc = "Decrease window verticaly" }))
