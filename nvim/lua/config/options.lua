@@ -91,3 +91,8 @@ end
 ------------------------------------
 vim.opt.spell = true
 vim.opt.spelllang = "en_us"
+
+------------------------------------
+-- LazyGit
+------------------------------------
+-- vim.g.lazygit_config = false
