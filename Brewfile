@@ -28,6 +28,10 @@ brew "pnpm" # Fast, disk space efficient package manager
 brew "libpq" # Postgres C API library
 brew "coreutils" # GNU File, Shell, and Text utilities
 
+### Kotlin ###
+brew "kotlin"
+brew "gradle"
+
 ### Others ###
 brew "fd" # Simple, fast and user-friendly alternative to find
 brew "ripgrep" # Search tool like grep and The Silver Searcher
