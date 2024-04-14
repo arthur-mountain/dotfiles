@@ -40,6 +40,7 @@ function comeProject () {
 # Personal
 alias mynode="comeProject ~/Desktop/projects"
 alias mygo="comeProject ~/Desktop/go-projects"
+alias myopensources="comeProject ~/Desktop/open-sources"
 
 # Work
 alias mywk="comeProject ~/Desktop/work"
