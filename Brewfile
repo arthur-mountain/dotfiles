@@ -47,6 +47,7 @@ cask "brave-browser"
 cask "google-chrome"
 cask "firefox"
 cask "microsoft-edge"
+cask "arc"
 
 ### Android ###
 cask "android-studio" # Tools for building Android applications
