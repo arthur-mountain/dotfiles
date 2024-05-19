@@ -18,6 +18,9 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
     { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
     { import = "lazyvim.plugins.extras.test.core" },
+    { import = "lazyvim.plugins.extras.editor.aerial" },
+    -- { import = "lazyvim.plugins.extras.lazyrc" },
+    -- { import = "lazyvim.plugins.extras.util.project" },
     -- Frontend
     { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.lang.tailwind" },
