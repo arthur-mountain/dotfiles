@@ -15,17 +15,19 @@ keymap.set({ "n", "i", "v", "t" }, ";;", "<ESC>", getOptions({ desc = "ESC" }))
 
 -- Save
 keymap.set({ "i", "x", "n", "s" }, ";w", ":w<CR><ESC>", getOptions({ desc = "Save file" }))
+keymap.set({ "i", "x", "n", "s" }, ";W", ":w!<CR><ESC>", getOptions({ desc = "Force Save file" }))
 
 -- Quit
 keymap.set("n", ";q", ":q<CR>", getOptions({ desc = "Quit file" }))
+keymap.set("n", ";Q", ":q!<CR>", getOptions({ desc = "Force quit file" }))
 
 -- Increment/Decrement
 keymap.set("n", "+", "<C-a>", getOptions({ desc = "Increment" }))
 keymap.set("n", "-", "<C-x>", getOptions({ desc = "Decrement" }))
 
 -- Press 'H', 'L' to jump to start/end of a line (first/last char)
-keymap.set({ "n", "v" }, "gL", "$", getOptions({ desc = "Jump to end of line" }))
-keymap.set({ "n", "v" }, "gH", "^", getOptions({ desc = "Jump to start of line" }))
+keymap.set({ "n", "v" }, "E", "$", getOptions({ desc = "Jump to end of line" }))
+keymap.set({ "n", "v" }, "B", "^", getOptions({ desc = "Jump to start of line" }))
 
 -- Prevent delete a char that overwrite what's in the clipboard
 keymap.set({ "n", "v" }, "x", '"_x', getOptions({ desc = "Delete char(s) without write into clipboard" }))
@@ -41,8 +43,8 @@ keymap.set("n", "<Leader><Tab>e", ":tabedit", getOptions({ desc = "Edit new file
 
 keymap.del("n", "<Leader><Tab>f")
 keymap.del("n", "<Leader><Tab>l")
-keymap.set("n", "<Leader><Tab>L", ":tabfirst<CR>", getOptions({ desc = "Go to first tab" }))
-keymap.set("n", "<Leader><Tab>H", ":tablast<CR>", getOptions({ desc = "Go to last tab" }))
+keymap.set("n", "<Leader><Tab>B", ":tabfirst<CR>", getOptions({ desc = "Go to first tab" }))
+keymap.set("n", "<Leader><Tab>E", ":tablast<CR>", getOptions({ desc = "Go to last tab" }))
 
 keymap.del("n", "<Leader><Tab>[")
 keymap.del("n", "<Leader><Tab>]")
@@ -82,6 +84,15 @@ keymap.set("n", "n", "Nzz")
 keymap.set("n", "N", "nzz")
 keymap.set("n", "%", "%zz")
 keymap.set("n", "*", "*zz")
+
+-- Remap the clear search, diff update and redraw
+keymap.del("n", "<Leader>ur")
+keymap.set(
+  "n",
+  "ss",
+  ":nohlsearch<Bar>diffupdate<Bar>normal! <C-L><CR>",
+  getOptions({ desc = "Redraw / Clear hlsearch / Diff Update" })
+)
 
 -- Press 'S' for quick find/replace for the word under the cursor
 keymap.set("n", "S", function()

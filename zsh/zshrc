@@ -98,6 +98,7 @@ plugins=(
   # autojump
   # zsh-autosuggestions
   zsh-syntax-highlighting
+  # tldr
 )
 
 source $ZSH/oh-my-zsh.sh
