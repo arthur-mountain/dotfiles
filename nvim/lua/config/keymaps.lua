@@ -86,7 +86,7 @@ keymap.set("n", "%", "%zz")
 keymap.set("n", "*", "*zz")
 
 -- Remap the clear search, diff update and redraw
-keymap.del("n", "<Leader>ur")
+-- keymap.del("n", "<Leader>ur")
 keymap.set(
   "n",
   "ss",
