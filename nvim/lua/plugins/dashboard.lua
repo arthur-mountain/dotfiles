@@ -1,14 +1,4 @@
 return {
-  --------- animations ---------
-  {
-    "echasnovski/mini.animate",
-    event = "VeryLazy",
-    opts = function(_, opts)
-      opts.scroll = { enable = false }
-    end,
-  },
-
-  --------- dashboard view ---------
   {
     "nvimdev/dashboard-nvim",
     event = "vimenter",

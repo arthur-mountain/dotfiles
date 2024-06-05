@@ -14,23 +14,28 @@ require("lazy").setup({
     -- All
     { import = "lazyvim.plugins.extras.coding.copilot" },
     { import = "lazyvim.plugins.extras.coding.mini-surround" },
-    { import = "lazyvim.plugins.extras.ui.mini-indentscope" },
-    { import = "lazyvim.plugins.extras.ui.mini-animate" },
+    -- { import = "lazyvim.plugins.extras.coding.copilot-chat" },
     { import = "lazyvim.plugins.extras.linting.eslint" },
     { import = "lazyvim.plugins.extras.formatting.prettier" },
     { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
     { import = "lazyvim.plugins.extras.editor.aerial" },
     { import = "lazyvim.plugins.extras.test.core" },
     { import = "lazyvim.plugins.extras.dap.core" },
-    -- { import = "lazyvim.plugins.extras.lazyrc" },
-    -- { import = "lazyvim.plugins.extras.util.project" },
+    { import = "lazyvim.plugins.extras.editor.navic" },
+    -- UI
+    { import = "lazyvim.plugins.extras.ui.mini-indentscope" },
+    { import = "lazyvim.plugins.extras.ui.mini-animate" },
+    { import = "lazyvim.plugins.extras.ui.treesitter-context" },
     -- Frontend
     { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.lang.tailwind" },
     -- Backend
     { import = "lazyvim.plugins.extras.lang.go" },
-    -- { import = "lazyvim.plugins.extras.lang.rust" },
+    -- { import = "lazyvim.plugins.extras.lang.java" },
+    -- { import = "lazyvim.plugins.extras.lang.kotlin" },
     -- { import = "lazyvim.plugins.extras.lang.haskell" },
+    -- { import = "lazyvim.plugins.extras.lang.rust" },
+    -- { import = "lazyvim.plugins.extras.lang.cmake" },
     -- Devops
     { import = "lazyvim.plugins.extras.lang.docker" },
     { import = "lazyvim.plugins.extras.lang.json" },
