@@ -14,13 +14,17 @@ local f = ls.function_node
 -- local fmt = extras.fmt
 -- local m = extras.m
 -- local l = extras.l
-local postfix = require("luasnip.extras.postfix").postfix
+local status, postfix = pcall(require("luasnip.extras.postfix").postfix)
 
-return {
-  postfix(".log", {
-    f(function(_, parent)
-      local matched = parent.snippet.env.POSTFIX_MATCH
-      return "console.log('" .. matched .. ":" .. " '" .. ", " .. matched .. ")"
-    end, {}),
-  }),
-}
+if not status then
+  return {}
+else
+  return {
+    postfix(".log", {
+      f(function(_, parent)
+        local matched = parent.snippet.env.POSTFIX_MATCH
+        return "console.log('" .. matched .. ":" .. " '" .. ", " .. matched .. ")"
+      end, {}),
+    }),
+  }
+end

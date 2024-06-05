@@ -17,14 +17,6 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
--- Load extend snippets
-vim.api.nvim_create_autocmd("FileType", {
-  group = "filetypedetect",
-  callback = function()
-    require("luasnip.loaders.from_lua").lazy_load({ paths = { "~/.config/nvim/lua/snippets" } })
-  end,
-})
-
 -- Save latest cursor position
 vim.api.nvim_create_autocmd("BufReadPost", {
   callback = function()
