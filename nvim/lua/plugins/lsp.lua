@@ -13,7 +13,6 @@ return {
       })
     end,
   },
-
   {
     "hrsh7th/nvim-cmp",
     dependencies = {
@@ -31,6 +30,13 @@ return {
 
       -- cmp emoji
       table.insert(opts.sources, { name = "emoji" })
+    end,
+  },
+  {
+    "neovim/nvim-lspconfig",
+    opts = function(_, opts)
+      -- disable inlay hints, as they are enabled by default in LazyVim if Neovim >= 0.10.0
+      opts.inlay_hints.enabled = false
     end,
   },
 }
