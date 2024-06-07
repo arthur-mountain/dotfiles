@@ -30,6 +30,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.tailwind" },
     -- Backend
     { import = "lazyvim.plugins.extras.lang.go" },
+    -- { import = "lazyvim.plugins.extras.lang.sql" },
     -- { import = "lazyvim.plugins.extras.lang.java" },
     -- { import = "lazyvim.plugins.extras.lang.kotlin" },
     -- { import = "lazyvim.plugins.extras.lang.haskell" },
