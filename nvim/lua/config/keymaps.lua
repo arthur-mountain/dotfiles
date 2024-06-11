@@ -54,6 +54,10 @@ keymap.set("n", "<Leader><Tab>l", ":tabnext<CR>", getOptions({ desc = "Go to nex
 -- keymap.del("n", "<Leader><Tab>d")
 -- keymap.set("n", "<Leader><Tab>q", ":tabclose<CR>", getOptions({ desc = "Quit tab" }))
 
+-- Window split right(remap) for as same as my tmux key binding
+keymap.del("n", "<Leader>|")
+keymap.set("n", "<Leader>\\", "<C-W>v", getOptions({ desc = "Split Window Right", remap = true }))
+
 -- Resize window
 keymap.set("n", "<C-w><left>", ":vertical resize -10<CR>", getOptions({ desc = "Decrease window verticaly" }))
 keymap.set("n", "<C-w><right>", ":vertical resize +10<CR>", getOptions({ desc = "Increase window verticaly" }))
