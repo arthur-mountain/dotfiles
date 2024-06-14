@@ -135,6 +135,9 @@ fi
 # Set up asdf golang
 . ~/.asdf/plugins/golang/set-env.zsh
 
+# Set up fzfz
+source <(fzf --zsh)
+
 
 ############################
 ####### key bindings #######
