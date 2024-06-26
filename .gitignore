@@ -32,3 +32,6 @@ npm-debug.log
 
 # temp ignore for now
 iterm2
+
+# lazy
+.lazy.lua
