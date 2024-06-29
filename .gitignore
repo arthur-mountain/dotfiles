@@ -29,6 +29,12 @@ tscommand*.txt
 
 # Npm things
 npm-debug.log
+.npm/
+.npmrc
+
+# Yarn things
+.yarn/
+.yarnrc
 
 # temp ignore for now
 iterm2
