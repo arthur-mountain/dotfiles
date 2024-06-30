@@ -9,7 +9,7 @@ zsh_setup() {
 
 	for file in "$DOTFILES/zsh/custom"/*; do
 		if [[ "$file" != "" ]]; then
-			destination="$HOME/.oh-my-zsh/custom/$(basename "$file")"
+			destination="$ZSH/custom/$(basename "$file")"
 
 			if [ -L "$destination" ]; then
 				ln -si "$file" "$destination"

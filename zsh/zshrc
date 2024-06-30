@@ -130,10 +130,10 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Set up asdf
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+. "$HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh"
 
 # Set up asdf golang
-. ~/.asdf/plugins/golang/set-env.zsh
+. "$HOME/.asdf/plugins/golang/set-env.zsh"
 
 # Set up fzfz
 source <(fzf --zsh)
