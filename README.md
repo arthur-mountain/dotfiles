@@ -4,7 +4,7 @@ Schedule, custom shell script automatically setup.
 
 ##### 1. Homebrew
 
-- [] Install [homebrew](https://brew.sh)
+- [x] Install [homebrew](https://brew.sh)
 
 - [x] Install packages of homebrew
 
@@ -39,31 +39,21 @@ Schedule, custom shell script automatically setup.
   - [x] font-hack-nerd-font
   - [x] google-cloud-sdk
 
-##### 2. Terminal with iterm2
+##### 2. Neovim
 
-- [] Setup iterm2 config
+- [x] Setup neovim config
 
-  a. Import iterm2 json config.
+##### 3. Zsh
 
-  b. Add additional keybinds for compatible with tmux.
+- [x] Install/Setup [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
 
-  1. command + l -> clear\n
+##### 4. Git
 
-##### 3. Neovim
+- [x] Setup global git config
 
-- [] Setup neovim config
+##### 5. Tmux
 
-##### 4. Zsh
-
-- [] Install/Setup [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
-
-##### 5. Git
-
-- [] Setup global git config
-
-##### 6. Tmux
-
-- [] Setup tmux config with [tpm](https://github.com/tmux-plugins/tpm).
+- [x] Setup tmux config with [tpm](https://github.com/tmux-plugins/tpm).
 
 # Refs
 
