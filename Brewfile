@@ -34,11 +34,13 @@ brew "gradle"
 
 ### Others ###
 brew "fd" # Simple, fast and user-friendly alternative to find
+brew "fzf" # Fuzzy find/search
 brew "ripgrep" # Search tool like grep and The Silver Searcher
 brew "sops" # Editor of encrypted files
 brew "watchman" # Watch files and take action when they change
 brew "xcodes", link: false # Best command-line tool to install and switch between multiple versions of Xcode
 brew "bat" # Similar to cat command, it's a cat clone with syntax highlighting and Git integration, etc.
+brew "chafa" # Terminal image preview
 
 ####################################
 ############## Casks ###############
@@ -55,7 +57,7 @@ cask "android-studio" # Tools for building Android applications
 cask "zulu11" # OpenJDK distribution from Azul
 
 ### Database ###
-cask "pgadmin4" # Administration and development platform for PostgreSQL
+cask "dbeaver-community" # Administration and development platform for database
 
 ### Cooperation ###
 cask "discord" # Voice and text chat software
