@@ -26,15 +26,21 @@ Thumbs.db
 
 # Typescript command garbage
 tscommand*.txt
+*.tsbuildinfo
 
-# Npm things
-npm-debug.log
-.npm/
-.npmrc
+# Pnpm
+.pnpm-debug.log*
 
 # Yarn things
 .yarn/
 .yarnrc
+yarn-debug.log*
+yarn-error.log*
+
+# Npm things
+npm-debug.log*
+.npm/
+.npmrc
 
 # temp ignore for now
 iterm2
