@@ -131,9 +131,8 @@ fi
 
 # Set up asdf
 . "$HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh"
-
-# Set up asdf golang
-. "$HOME/.asdf/plugins/golang/set-env.zsh"
+. "$HOME/.asdf/plugins/golang/set-env.zsh" # golang
+. "$HOME/.asdf/plugins/java/set-java-home.zsh" # java
 
 # Set up fzfz
 source <(fzf --zsh)

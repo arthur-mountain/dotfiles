@@ -47,6 +47,3 @@ if [[ -n "$(command -v tmux)" ]]; then
   alias tmns='tmux new-session -dAs'
 fi
 
-# Java
-alias java22='export JAVA_HOME="$(/usr/libexec/java_home -v 22)"; java -version'
-alias java11='export JAVA_HOME="$(/usr/libexec/java_home -v 11)"; java -version'

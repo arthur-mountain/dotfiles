@@ -28,8 +28,7 @@ brew "pnpm" # Fast, disk space efficient package manager
 brew "libpq" # Postgres C API library
 brew "coreutils" # GNU File, Shell, and Text utilities
 
-### Kotlin ###
-brew "kotlin"
+### Java build tool ###
 brew "gradle"
 
 ### Others ###
@@ -54,7 +53,6 @@ cask "arc"
 
 ### Android ###
 cask "android-studio" # Tools for building Android applications
-cask "zulu11" # OpenJDK distribution from Azul
 
 ### Database ###
 cask "dbeaver-community" # Administration and development platform for database
