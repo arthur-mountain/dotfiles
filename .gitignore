@@ -29,16 +29,16 @@ tscommand*.txt
 *.tsbuildinfo
 
 # Pnpm
-.pnpm-debug.log*
+.pnpm-debug*
 
 # Yarn things
 .yarn/
 .yarnrc
-yarn-debug.log*
-yarn-error.log*
+yarn-debug*
+yarn-error*
 
 # Npm things
-npm-debug.log*
+npm-debug*
 .npm/
 .npmrc
 
