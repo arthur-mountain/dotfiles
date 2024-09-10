@@ -18,7 +18,7 @@ return {
         vtsls = {
           enabled = false,
         },
-        tsserver = {
+        ts_ls = {
           keys = {
             {
               "<leader>co",
