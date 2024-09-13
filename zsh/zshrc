@@ -139,6 +139,8 @@ source <(fzf --zsh)
 export FZF_DEFAULT_OPTS="--color=fg:cyan,bg:#282828,hl:#FFD700,fg+:#00ffff,bg+:#3c3836,hl+:#B95CF4,info:#8ec07c,prompt:#fe8019,pointer:#d3869b,marker:#b8bb26,spinner:#83a598"
 # export FZF_DEFAULT_OPTS="--preview 'bat --color=always --style=numbers --line-range=:500 {}'" # Default open preview
 
+# homebrew 
+export HOMEBREW_NO_AUTO_UPDATE=1
 
 ############################
 ####### key bindings #######
