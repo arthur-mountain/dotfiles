@@ -47,3 +47,6 @@ iterm2
 
 # lazy
 .lazy.lua
+
+# act
+payload.json
