@@ -76,8 +76,8 @@ ZSH_THEME="random"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-HIST_STAMPS="yyyy-mm-dd"
-# HISTCONTROL="ignoreboth"     # Omit duplicates and commands that begin with a space from history.
+export HIST_STAMPS="yyyy-mm-dd"
+export HISTCONTROL="ignoreboth:erasedups"     # Omit duplicates and commands that begin with a space from history.
 setopt HIST_IGNORE_SPACE     # Don't record an entry starting with a space.
 setopt HIST_IGNORE_ALL_DUPS  # Delete old recorded entry if new entry is a duplicate.
 setopt HIST_IGNORE_DUPS      # Don't record an entry that was just recorded again.
