@@ -50,3 +50,7 @@ iterm2
 
 # act
 payload.json
+
+# sql - lsp, linter, formatter
+.sqllsrc.json
+.sqlfluff

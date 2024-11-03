@@ -5,8 +5,6 @@ return {
       vim.list_extend(opts.ensure_installed, {
         "css",
         "gitignore",
-        "dockerfile",
-        "sql",
         "graphql",
         "http",
         "go",
