@@ -2,12 +2,12 @@
 
 zsh_setup() {
   if [ -L "$HOME/.zshrc" ]; then
-    ln -si "$DOTFILES/zsh/.zshrc" "$HOME/.zshrc"
+    ln -si "$DOT_FILE_PATH/zsh/.zshrc" "$HOME/.zshrc"
   else
-    ln -s "$DOTFILES/zsh/.zshrc" "$HOME/.zshrc"
+    ln -s "$DOT_FILE_PATH/zsh/.zshrc" "$HOME/.zshrc"
   fi
 
-  for file in "$DOTFILES/zsh/custom"/*; do
+  for file in "$DOT_FILE_PATH/zsh/custom"/*; do
     if [[ "$file" != "" ]]; then
       destination="$ZSH/custom/$(basename "$file")"
 

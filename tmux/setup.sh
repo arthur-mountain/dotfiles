@@ -2,9 +2,9 @@
 
 tmux_setup() {
   if [ -L "$HOME/.tmux.conf" ]; then
-    ln -si "$DOTFILES/tmux/tmux.conf" "$HOME/.tmux.conf"
+    ln -si "$DOT_FILE_PATH/tmux/tmux.conf" "$HOME/.tmux.conf"
   else
-    ln -s "$DOTFILES/tmux/tmux.conf" "$HOME/.tmux.conf"
+    ln -s "$DOT_FILE_PATH/tmux/tmux.conf" "$HOME/.tmux.conf"
   fi
 }
 
