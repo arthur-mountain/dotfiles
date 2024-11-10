@@ -7,19 +7,6 @@ return {
       vim.list_extend(opts.ensure_installed, { "sql" })
     end,
   },
-  {
-    "neovim/nvim-lspconfig",
-    opts = {
-      servers = {
-        sqlls = {},
-      },
-      settings = {
-        sqlls = {
-          validate = true,
-        },
-      },
-    },
-  },
   -- Linters & formatters
   {
     "williamboman/mason.nvim",
@@ -37,11 +24,7 @@ return {
   {
     "stevearc/conform.nvim",
     opts = function(_, opts)
-      opts.formatters.sqlfluff = {
-        cwd = require("conform.util").root_file({ ".sqlfluff" }),
-        require_cwd = false,
-        args = { "fix", "--dialect=ansi", "-" },
-      }
+      opts.formatters.sqlfluff = { args = { "fix", "--dialect=ansi", "-" } }
       for _, ft in ipairs(sql_ft) do
         opts.formatters_by_ft[ft] = opts.formatters_by_ft[ft] or {}
         table.insert(opts.formatters_by_ft[ft], "sqlfluff")
