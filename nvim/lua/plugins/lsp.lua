@@ -20,17 +20,17 @@ return {
       opts.inlay_hints.enabled = false
     end,
   },
-  -- {
-  --   "saghen/blink.cmp",
-  --   opts = function(_, opts)
-  --     -- default: https://github.com/Saghen/blink.cmp/blob/main/lua/blink/cmp/keymap/presets.lua
-  --     -- TODO: the <C-k> keymap exists currently, so not allowed to temporarily override  when cmp menu opened
-  --     opts.keymap = vim.tbl_extend("force", opts.keymap, {
-  --       ["<C-k>"] = { "select_prev", "fallback" }, -- previous suggestion
-  --       ["<C-j>"] = { "select_next", "fallback" }, -- next suggestion
-  --     })
-  --   end,
-  -- },
+  {
+    "saghen/blink.cmp",
+    opts = function(_, opts)
+      -- default: https://github.com/Saghen/blink.cmp/blob/main/lua/blink/cmp/keymap/presets.lua
+      -- FIXME: failed setup the <C-k> keymap when cmp menu opened
+      -- opts.keymap = vim.tbl_extend("force", opts.keymap, {
+      --   ["<C-k>"] = { "select_prev", "fallback" }, -- previous suggestion
+      --   ["<C-j>"] = { "select_next", "fallback" }, -- next suggestion
+      -- })
+    end,
+  },
   -- {
   --   "hrsh7th/nvim-cmp",
   --   dependencies = {
