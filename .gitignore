@@ -54,3 +54,6 @@ payload.json
 # sql - lsp, linter, formatter
 .sqllsrc.json
 .sqlfluff
+
+# my custom config for global setup 
+zsh/custom/my-user-config*
