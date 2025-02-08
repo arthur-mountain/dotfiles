@@ -2,14 +2,14 @@
 function comeProject () {
   local COLOR_GREEN="\033[0;32m";
   local COLOR_RESET="\033[0m";
-  local PROJECT_PATH=$1;
-  local folders=($(ls $PROJECT_PATH));
+  local PROJECT_PATH="$HOME/Desktop/$1";
+  local folders=($(ls "$PROJECT_PATH"));
   local endIdx=${#folders[*]};
   local folderIdx;
   local isOpenVscode
 
   if [[ $endIdx == 0 ]]; then
-    cd $PROJECT_PATH
+    cd "$PROJECT_PATH"
     return
   fi
 
@@ -34,14 +34,17 @@ function comeProject () {
   #   fi
   # fi
 
-  cd $PROJECT_PATH/${folders[folderIdx]}
+  cd "$PROJECT_PATH/${folders[folderIdx]}"
 }
 
 # Personal
-alias mynode="comeProject ~/Desktop/projects"
-alias mygo="comeProject ~/Desktop/go-projects"
-alias myopensources="comeProject ~/Desktop/open-sources"
+alias myopensources="comeProject open-sources"
+alias mynode="comeProject projects-javascript"
+alias myjava="comeProject projects-java"
+alias mygo="comeProject projects-golang"
+alias myswift="comeProject projects-swift"
+alias mydaodao="comeProject daodao"
 
 # Work
-alias mywk="comeProject ~/Desktop/work"
+alias mywk="comeProject projects-work"
 
