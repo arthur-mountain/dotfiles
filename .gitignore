@@ -55,5 +55,8 @@ payload.json
 .sqllsrc.json
 .sqlfluff
 
-# my custom config for global setup 
+# my custom config for global setup
 zsh/custom/my-user-config*
+
+# my custom prompts
+nvim/lua/prompts
