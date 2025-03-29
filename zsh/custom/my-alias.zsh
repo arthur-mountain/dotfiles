@@ -12,8 +12,15 @@ alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 # Configs
 alias dotfile="cd ~/.dotfiles"
 
-# Print prettily PATH
+# Print prettily
 alias path='echo $PATH | tr -s ":" "\n"'
+function envVars () {
+  if [ -z "$1" ]; then
+    echo "Usage: envVars <file>"
+    return 1
+  fi
+  cat "$1"| egrep -v "^#" | sort | awk -F '=' '{print $1}' | sed '/^$/d'
+}
 
 # Easier navigation: .., ..., ...., .....
 alias ..="cd .."
