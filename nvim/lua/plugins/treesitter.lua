@@ -8,8 +8,6 @@ return {
         "graphql",
         "http",
         "go",
-        -- "rust",
-        -- "haskell",
       })
     end,
     config = function(_, opts)

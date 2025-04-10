@@ -7,9 +7,6 @@ return {
         "shellcheck",
         "css-lsp",
         "mdx-analyzer",
-        -- "rust-analyzer",
-        -- "haskell-language-server",
-        -- "haskell-debug-adapter",
       })
     end,
   },
