@@ -1,11 +1,4 @@
 ####################################
-############## Taps ################
-####################################
-tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
-
-####################################
 ############## CLIS ################
 ####################################
 ### Development tools ###
@@ -21,15 +14,17 @@ brew "httpie" # User-friendly cURL replacement (command-line HTTP client)
 brew "kubernetes-cli" # Kubernetes command-line interface
 
 ### Manager ###
-brew "asdf"
+brew "asdf" # Tool to manage multiple language runtimes with plugin support
 brew "pnpm" # Fast, disk space efficient package manager
 
-### Dependencies ###
-brew "libpq" # Postgres C API library
-brew "coreutils" # GNU File, Shell, and Text utilities
+### iOS ###
+brew "xcodes", link: false # Best command-line tool to install and switch between multiple versions of Xcode
 
 ### Java build tool ###
-brew "gradle"
+brew "gradle" # Flexible build tool for JVM languages and other platforms
+
+### Cloud ###
+# brew "awscli" # Command-line tools to manage resources and services on AWS
 
 ### Others ###
 brew "fd" # Simple, fast and user-friendly alternative to find
@@ -37,19 +32,22 @@ brew "fzf" # Fuzzy find/search
 brew "ripgrep" # Search tool like grep and The Silver Searcher
 brew "sops" # Editor of encrypted files
 brew "watchman" # Watch files and take action when they change
-brew "xcodes", link: false # Best command-line tool to install and switch between multiple versions of Xcode
 brew "bat" # Similar to cat command, it's a cat clone with syntax highlighting and Git integration, etc.
 brew "chafa" # Terminal image preview
+brew "font-hack-nerd-font" # Fonts
+
 
 ####################################
 ############## Casks ###############
 ####################################
-### Browser ###
-cask "brave-browser"
+### Browsers ###
 cask "google-chrome"
 cask "firefox"
+cask "brave-browser"
 cask "microsoft-edge"
-cask "arc"
+
+### iOS ###
+cask "xcodes" # Install and switch between multiple versions of Xcode
 
 ### Android ###
 cask "android-studio" # Tools for building Android applications
@@ -65,14 +63,8 @@ cask "notion" # App to write, plan, collaborate, and get organised
 cask "iterm2" # Terminal emulator as alternative to Apple's Terminal app
 
 ### Docker ###
-cask "docker" # App to build and share containerised applications and microservices
+# cask "docker" # Platform to build, share, and run containerized applications and microservices
+cask "orbstack" # Lightweight alternative to Docker Desktop for managing containers and VMs on macOS
 
-### Others ###
+### Cloud ###
 cask "google-cloud-sdk" # Set of tools to manage resources and applications hosted on Google Cloud
-
-cask "ngrok" # Reverse proxy, secure introspectable tunnels to localhost
-
-cask "xcodes" # Install and switch between multiple versions of Xcode
-
-### Fonts ##
-cask "font-hack-nerd-font"
