@@ -39,6 +39,8 @@ git_setup() {
 [diff]
   algorithm = patience
 
+[pull]
+    rebase = true
 EOF
 }
 
