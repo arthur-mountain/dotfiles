@@ -2,6 +2,7 @@ return {
   {
     "folke/snacks.nvim",
     opts = function(_, opts)
+      -- dashboard
       local logo = [[
   █████╗ ██████╗ ████████╗██╗  ██╗██╗   ██╗██████╗
 ██╔══██╗██╔══██╗╚══██╔══╝██║  ██║██║   ██║██╔══██╗
@@ -12,6 +13,9 @@ return {
       ]]
 
       opts.dashboard.preset.header = logo
+
+      -- scroll
+      opts.scroll.enabled = false
     end,
   },
 }
