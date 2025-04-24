@@ -47,10 +47,10 @@ function envVars () {
 }
 
 # Easier navigation: .., ..., ...., .....
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
+# alias ..="cd .."
+# alias ...="cd ../.."
+# alias ....="cd ../../.."
+# alias .....="cd ../../../.."
 
 # Shortcuts
 alias dl="cd ~/Downloads"
