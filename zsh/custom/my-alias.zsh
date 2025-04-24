@@ -12,24 +12,29 @@ alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 # Cleanup jdtls cache
 function jdtlsCleanup() {
   local JDTLS_CACHE_PATH="$HOME/.cache/nvim/jdtls";
-  if [[ ! -d "${JDTLS_CACHE_PATH}" ]]; then
+  if [ ! -d "$JDTLS_CACHE_PATH" ]; then
     echo -e "No jdtls cache found. Skipping cleanup."
-    return 
+    return
+  fi
+
+  if [ -z "$(ls -A "$JDTLS_CACHE_PATH")" ]; then
+    echo -e "No jdtls build project found."
+    return
   fi
 
   PS3="Select a project to clean: "
-  select project_name in "($(ls "$JDTLS_CACHE_PATH"))"; do
-    if [[ -z "$project_name" ]]; then
+  select project_name in $(ls "$JDTLS_CACHE_PATH"); do
+    if [ -z "$project_name" ]; then
       echo -e "\nError: Invalid selection. Please try again."
       return
     fi
 
-    if [[ -f "$JDTLS_CACHE_PATH/$project_name" ]]; then
-      echo -e "rm -r \"${JDTLS_CACHE_PATH}/${project_name}\""
-      # rm -r "${PROJECT_PATH}/${project_name}"
-    else
-      echo -e "\nWarning: No cache files found for the selected project."
+    if [ -d "$JDTLS_CACHE_PATH/$project_name" ]; then
+      rm -rf "$JDTLS_CACHE_PATH/$project_name"
+      return 
     fi
+
+    echo -e "\nWarning: No cache directory found for the selected project($JDTLS_CACHE_PATH/$project_name)."
   done
 }
 
