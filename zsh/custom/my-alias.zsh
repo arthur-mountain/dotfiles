@@ -67,18 +67,18 @@ alias dt="cd ~/Desktop"
 alias week='date +%V'
 
 # Editor
-if [[ -n "$(command -v nvim)" ]]; then
+if command -v nvim >/dev/null 2>&1; then
     alias v='nvim'
     alias vim='nvim'
 fi
 
 # Lazy git
-if [[ -n "$(command -v lazygit)" ]]; then
+if command -v lazygit >/dev/null 2>&1; then
   alias lg='lazygit'
 fi
 
 # Tmux
-if [[ -n "$(command -v tmux)" ]]; then
+if command -v tmux >/dev/null 2>&1; then
   alias tm='tmux'
   alias tma='tmux attach'
   alias tmat='tmux attach -t'
