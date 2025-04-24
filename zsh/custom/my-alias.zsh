@@ -17,19 +17,21 @@ function jdtlsCleanup() {
     return
   fi
 
-  if [ -z "$(ls -A "$JDTLS_CACHE_PATH")" ]; then
+  projects=$(ls -A "$JDTLS_CACHE_PATH")
+  if [ -z "$projects" ]; then
     echo -e "No jdtls build project found."
     return
   fi
 
   PS3="Select a project to clean: "
-  select project_name in $(ls "$JDTLS_CACHE_PATH"); do
+  select project_name in $projects; do
     if [ -z "$project_name" ]; then
       echo -e "\nError: Invalid selection. Please try again."
       return
     fi
 
     if [ -d "$JDTLS_CACHE_PATH/$project_name" ]; then
+      echo -e "\nRemoving cache for project at '$JDTLS_CACHE_PATH/$project_name'."
       rm -rf "$JDTLS_CACHE_PATH/$project_name"
       return 
     fi
